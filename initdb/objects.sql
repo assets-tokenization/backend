@@ -1,0 +1,23 @@
+CREATE TABLE REALESTATEOBJECTS (
+    id BIGSERIAL, 
+    title VARCHAR(1024),
+    tokenized BOOLEAN,
+    description VARCHAR(1024),
+    photos BIGINT[],
+    number VARCHAR(1024),
+    address VARCHAR(256),
+    type VARCHAR(1024),
+    lawdata VARCHAR(1024),
+    location real[],
+    document VARCHAR(1024),
+    ownform VARCHAR(1024),
+    expdate VARCHAR(1024),
+    govregistrator VARCHAR(1024),
+    objectdescription VARCHAR(1024),
+    totalarea VARCHAR(1024),
+    livingarea VARCHAR(1024),
+    problems VARCHAR(1024),
+    createAt timestamp,
+    updateAt timestamp,
+    userId BIGINT
+);
