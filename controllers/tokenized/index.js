@@ -108,8 +108,6 @@ exports.setSelectedPlatform = async function (req, res) {
 
         const result = await pool.query(statement);
 
-//        const ic_result = await ic_contract.set_info(id, { name: 'contract_ether', id, ipn: '', addr: ''});
-
         res.json({status: 'updated', result});
     } catch(err) {
         res.status(500).json(err);

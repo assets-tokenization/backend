@@ -8,7 +8,7 @@ const pkgAgent= require('@dfinity/agent');
 
 const pkgPrincipal= require('@dfinity/principal');
 
-const Identity = require("@dfinity/identity");
+const { Secp256k1KeyIdentity } = require("@dfinity/identity-secp256k1");
 
 const sha256 = require("sha256");
 
@@ -20,8 +20,6 @@ const {idlFactory}= require(idl_factory);
 
 
 const getIdentity = () => {
-
-    const { Secp256k1KeyIdentity, Secp256k1PublicKey } = Identity;
 
     const rawKey = readFileSync(prived_key).toString();
 
@@ -90,5 +88,3 @@ exports.ic_get_asset_info = async(key) => {
     const actor = await actorIC();
     return actor.asset_get(key);
 }
-
-
