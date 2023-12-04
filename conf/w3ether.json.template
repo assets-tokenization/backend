@@ -1,0 +1,14 @@
+{
+    "url": "",
+    "privedkey":"",
+    "account": "",
+    "drawAddress": "",
+    "gasPriceDeploy": ,
+    "gasPriceTokenize": ,
+    "contract": {
+        "fileName": "",
+        "name": ""
+    },
+    "chainId": 1337
+
+}

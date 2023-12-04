@@ -1,5 +1,5 @@
 .env
-conf/
+conf/*.json
 data/
 node_modules/
 package-lock.json
